@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/Users/rsambari/Documents/rdc-next/app'
+let g:netrw_dirhist_2='/Users/rsambari/Documents/rdc-next/app/controllers'
+let g:netrw_dirhist_3='/Users/rsambari/Documents/rdc-next'
+let g:netrw_dirhist_4='/Users/rsambari/Documents/rdc-next/bin'
+let g:netrw_dirhist_5='/Users/rsambari/Documents/rdc-next'
+let g:netrw_dirhist_6='/Users/rsambari/.vim/bundle'
+let g:netrw_dirhist_7='/Users/rsambari/Documents/rdc-next'
