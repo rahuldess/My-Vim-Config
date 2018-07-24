@@ -2,7 +2,7 @@
 `git clone git@github.com:rahuldess/myvimconfig.git`
 
 # Create symlinks by using below commands:
-`ln -s ~/.vim/vimrc ~/.vimrc`
+`ln -s ~/.vim/vimrc ~/.vimrc ~/.vimrc`
 
 
 ## REFERENCE TUTORIAL:
