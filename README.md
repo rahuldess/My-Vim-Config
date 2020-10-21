@@ -1,8 +1,8 @@
 # Installation
-`git clone git@github.com:rahuldess/myvimconfig.git`
+`git clone git@github.com:rahuldess/myvimconfig.git ~/.vim`
 
 # Create symlinks by using below commands:
-`ln -s ~/myvimconfig/vimrc ~/.vimrc`
+`ln -s ~/.vim/vimrc ~/.vimrc`
 
 
 ## REFERENCE TUTORIAL:
