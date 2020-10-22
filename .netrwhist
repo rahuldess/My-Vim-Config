@@ -1,3 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_cnt =5
 let g:netrw_dirhist_1='/Users/rsambari/Documents/paywith'
+let g:netrw_dirhist_2='/Users/t946500/.vim'
+let g:netrw_dirhist_3='/Users/t946500/Documents/Automation'
+let g:netrw_dirhist_4='/Users/t946500/.vim/bundle'
+let g:netrw_dirhist_5='/Users/t946500/Documents/Automation'
