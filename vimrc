@@ -16,9 +16,10 @@ call plug#begin()
 
   Plug 'janko/vim-test'             			" Run Ruby and Elixir tests
   Plug 'altercation/vim-colors-solarized' " Solarized ColorScheme 
-  Plug 'easymotion/vim-easymotion' 				"  
+  Plug 'easymotion/vim-easymotion' 				
   Plug 'tpope/vim-sensible'								
 
+  Plug 'kien/ctrlp.vim'             " File finder 
 	Plug 'vim-syntastic/syntastic'		" Check Syntax
 	Plug 'rking/ag.vim'               " Silver Searcher
 	Plug 'preservim/nerdtree'         " NERDTree 
