@@ -1,10 +1,48 @@
-execute pathogen#infect()
 syntax on
 
 filetype plugin indent on
 filetype indent on
 filetype on           " Enable filetype detection
 filetype plugin on    " Enable filetype-specific plugins
+
+" Keep Plug commands between plug#begin() and plug#end().
+call plug#begin()
+  Plug 'vim-ruby/vim-ruby'       		" Ruby plugin
+  Plug 'nikolalsvk/vim-rails'       " Rails plugin
+  Plug 'pangloss/vim-javascript'    " JavaScript support
+  Plug 'leafgarland/typescript-vim' " TypeScript syntax
+  Plug 'maxmellon/vim-jsx-pretty'   " JS and JSX syntax
+  Plug 'jparise/vim-graphql'        " GraphQL syntax
+
+  Plug 'janko/vim-test'             			" Run Ruby and Elixir tests
+  Plug 'altercation/vim-colors-solarized' " Solarized ColorScheme 
+  Plug 'easymotion/vim-easymotion' 				"  
+  Plug 'tpope/vim-sensible'								
+
+	Plug 'vim-syntastic/syntastic'		" Check Syntax
+	Plug 'rking/ag.vim'               " Silver Searcher
+	Plug 'preservim/nerdtree'         " NERDTree 
+  Plug 'airblade/vim-gitgutter'     " Show git diff of lines edited
+  Plug 'tpope/vim-fugitive'         " :Gblame
+  Plug 'tpope/vim-endwise'          " Autocomplete end after a do
+  Plug 'styled-components/vim-styled-components'
+  Plug 'vim-airline/vim-airline'    " Vim powerline
+  Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+  Plug 'junegunn/fzf.vim'           " Set up fzf and fzf.vim
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+call plug#end()
+
+" -------------------------------------------------------------------------
+"  VSCode like for TypeScript
+" -------------------------------------------------------------------------
+nmap <leader>ac  <Plug>(coc-codeaction)
+nmap <leader>qf  <Plug>(coc-fix-current)
+
+" GoTo code navigation.
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
 
 " ---------------------------------------------------------------------------
 "  Colors / Theme
@@ -90,4 +128,8 @@ let g:vim_g_command = "G"
 " Vim JS Related
 let g:javascript_plugin_jsdoc = 1
 let g:javascript_plugin_ngdoc = 1
+
+" CoC extensions
+let g:coc_global_extensions = ['coc-tsserver']
+
 set runtimepath^=~/.vim/bundle/ag
